@@ -1,0 +1,93 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package LojaJogos;
+
+/**
+ *
+ * @author vinicius
+ */
+public class Estoque {
+public Estoque(){} // CONSTRUTOR PADRAO NESTA LINHA   
+    
+    private String quantidadeTotal = "";
+    private String nomeJogo        ="";
+    private int idProduto       =0;
+    private String CategoriaJogo   ="";
+    private String classificacaoIndicativa ="";
+  
+    // CONSTRUTORES 
+    
+    public Estoque (String quantidadeTotal, String nomeJogo, int idProduto, String CategoriaJogo, String classificacaoIndicativa){
+        this.quantidadeTotal = quantidadeTotal;
+        this.nomeJogo = nomeJogo;
+        this.idProduto = idProduto;
+        this.CategoriaJogo = CategoriaJogo;
+        this.classificacaoIndicativa = classificacaoIndicativa;
+    }
+    
+    // GET E SET QUANTIDADE TOTAL
+    
+    public String getQuantidadeTotal(){  
+        return quantidadeTotal;
+    }
+    
+    public void setQuantidadeTotal(String quantidadeTotal){
+            this.quantidadeTotal = quantidadeTotal;
+    
+    }
+    
+    //GET E SET nomejogo
+    
+    public String getNomeJogo(){
+        return nomeJogo;
+    }
+    
+    public void setNomeJogo(String nomeJogo){
+        this.nomeJogo = nomeJogo;
+    }
+    
+    
+    //GET E SET ID PRODUTO
+    
+   
+    public Integer getIdproduto(){
+        return idProduto;
+    }
+    
+    public void setIdproduto(Integer idProduto){
+        this.idProduto = idProduto;
+    }
+    
+    
+    //GET E SET CATEGORIA JOGO
+    
+    public String getCategoriaJogo(){
+        return CategoriaJogo;
+    }
+    
+    public void setCategoriaJogo (String CategoriaJogo){
+        this.CategoriaJogo = CategoriaJogo;
+    }
+    
+    //GET E SET CATEGORIA INDICATIVA
+    
+    public String classificacaoIndicativa(){
+        return classificacaoIndicativa;
+    }
+    
+    public void setclassificacaoIndicativa (String classificacaoIndicativa){
+        this.classificacaoIndicativa = classificacaoIndicativa;
+    }
+    
+   void Incluir(){};
+   void Editar(){};
+   void Pesquisar(){};
+   void Deletar(){};
+    
+    
+    protected void finalize (){}   
+   
+    
+}
